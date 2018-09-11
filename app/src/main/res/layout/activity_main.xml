@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     android:orientation="vertical"
 >
 
@@ -13,19 +14,31 @@
         style="@style/CategoryStyle"
         android:text="@string/category_albums" />
 
+    <View
+        style="@style/border" />
+
     <TextView
         android:id="@+id/artists"
         style="@style/CategoryStyle"
         android:text="@string/category_artists" />
+
+    <View
+        style="@style/border" />
 
     <TextView
         android:id="@+id/songs"
         style="@style/CategoryStyle"
         android:text="@string/category_songs" />
 
+    <View
+        style="@style/border" />
+
     <TextView
-        android:id="@+id/playlists"
+        android:id="@+id/playing"
         style="@style/CategoryStyle"
-        android:text="@string/category_playlists" />
+        android:text="@string/category_playing" />
+
+    <View
+        style="@style/border" />
 
 </LinearLayout>
