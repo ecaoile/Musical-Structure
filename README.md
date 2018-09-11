@@ -13,7 +13,7 @@ The following is required to run the program.
 3. A working emulator or Android phone to use the app
 
 ## Example
-![Musical Structure SS](musical-structure-SS.jpg)
+![Musical Structure SS](musical-structure-SS.png)
 
 ## Happy Path
  - open application in Android Studio
