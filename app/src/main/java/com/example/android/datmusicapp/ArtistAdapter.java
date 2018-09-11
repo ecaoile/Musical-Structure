@@ -9,11 +9,11 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class ArtistAdapter extends ArrayAdapter<Song> {
+public class ArtistAdapter extends ArrayAdapter<String> {
 
-    public ArtistAdapter(Activity context, ArrayList<Song> songs)
+    public ArtistAdapter(Activity context, ArrayList<String> artists)
     {
-        super(context, 0, songs);
+        super(context, 0, artists);
     }
 
     @Override
@@ -24,10 +24,10 @@ public class ArtistAdapter extends ArrayAdapter<Song> {
                     R.layout.list_item, parent, false);
         }
 
-        Song currentSong = getItem(position);
+        String artist = getItem(position);
 
         TextView songTextView = (TextView) listItemView.findViewById(R.id.song_text_view);
-        songTextView.setText(currentSong.getSongArtist());
+        songTextView.setText(artist);
 
         return listItemView;
     }

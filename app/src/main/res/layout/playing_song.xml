@@ -33,6 +33,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/genre_text_view"
+        style="@style/ListStyle"
+        tools:text="Hip Hop"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/duration_text_view"
         style="@style/ListStyle"
         tools:text="180 seconds" />

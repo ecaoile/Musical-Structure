@@ -27,7 +27,12 @@ public class ArtistActivity extends AppCompatActivity {
         songs.add(new Song("Steady WPM", "1337 Beats to Relax To","Smooth Coder"
                 ,"instrumental",321,2016));
 
-        ArtistAdapter adapter = new ArtistAdapter(this, songs);
+        ArrayList<String> artists = new ArrayList<>();
+        artists.add("Dem Coders");
+        artists.add("Rage Against Exceptions");
+        artists.add("Smooth Coder");
+
+        ArtistAdapter adapter = new ArtistAdapter(this, artists);
 
         ListView listView = (ListView) findViewById(R.id.list);
 

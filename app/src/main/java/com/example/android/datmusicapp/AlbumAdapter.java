@@ -9,11 +9,11 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class AlbumAdapter extends ArrayAdapter<Song> {
+public class AlbumAdapter extends ArrayAdapter<String> {
 
-    public AlbumAdapter(Activity context, ArrayList<Song> songs)
+    public AlbumAdapter(Activity context, ArrayList<String> albums)
     {
-        super(context, 0, songs);
+        super(context, 0, albums);
     }
 
     @Override
@@ -24,11 +24,11 @@ public class AlbumAdapter extends ArrayAdapter<Song> {
                     R.layout.list_item, parent, false);
         }
 
-        Song currentSong = getItem(position);
+        String album = getItem(position);
 
         TextView songTextView = (TextView) listItemView.findViewById(R.id.song_text_view);
 
-        songTextView.setText(currentSong.getSongAlbum());
+        songTextView.setText(album);
 
         return listItemView;
     }

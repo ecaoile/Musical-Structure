@@ -36,10 +36,13 @@ public class PlayingActivity extends AppCompatActivity {
         songTitleView.setText(randomSong.getSongTitle());
 
         TextView songAlbumView = (TextView) findViewById(R.id.album_text_view);
-        songAlbumView.setText(randomSong.getSongAlbum());
+        songAlbumView.setText(randomSong.getSongAlbum() + " (" + randomSong.getSongYear() + ")");
 
         TextView songArtistView = (TextView) findViewById(R.id.artist_text_view);
         songArtistView.setText(randomSong.getSongArtist());
+
+        TextView songGenreView = (TextView) findViewById(R.id.genre_text_view);
+        songGenreView.setText(randomSong.getSongGenre());
 
         TextView songDurationView = (TextView) findViewById(R.id.duration_text_view);
         songDurationView.setText(randomSong.getSongDuration());

@@ -37,4 +37,8 @@ public class Song {
     {
         return mDuration + " seconds";
     }
+
+    public String getSongGenre() { return mGenre; }
+
+    public int getSongYear() { return mYear; }
 }
